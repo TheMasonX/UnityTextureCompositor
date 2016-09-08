@@ -121,6 +121,6 @@ public struct CompositeChannel
 
     public float GetValue (float u, float v)
     {
-        return sourceTexture ? sourceTexture.GetPixelBilinear(u, v).r : defaultValue;
+        return sourceTexture ? sourceTexture.GetPixelBilinear(u, v)..grayscale : defaultValue;
     }
 }
